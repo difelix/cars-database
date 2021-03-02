@@ -3,7 +3,6 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
 	id("org.springframework.boot") version "2.4.2"
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
-	id("org.flywaydb.flyway") version "7.5.2"
 	kotlin("jvm") version "1.4.21"
 	kotlin("plugin.spring") version "1.4.21"
 	kotlin("plugin.jpa") version "1.4.21"
@@ -38,11 +37,4 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType<Test> {
 	useJUnitPlatform()
-}
-
-flyway {
-	url = "jdbc:postgresql://localhost:5432/cars_database"
-	user = "difelix"
-	password = "123456"
-	baselineOnMigrate = true
 }

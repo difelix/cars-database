@@ -8,7 +8,7 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "TBL_CAR_BRAND")
-data class CarBrand(
+data class Brand(
 
     @Id
     @Column(name = "id")
@@ -16,6 +16,9 @@ data class CarBrand(
 
     @Column(name = "name", nullable = false, unique = true)
     val name: String = "",
+
+    @Column(name = "description", length = 500)
+    val description: String? = null,
 
     @Column(name = "head_office", nullable = false)
     val headOffice: String = "",

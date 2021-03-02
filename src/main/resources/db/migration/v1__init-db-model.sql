@@ -1,8 +1,0 @@
-CREATE TABLE TBL_CAR_BRAND (
-  id VARCHAR(100) NOT NULL,
-  name VARCHAR(100) NOT NULL,
-  head_office VARCHAR(100) NOT NULL,
-  foundation_year INTEGER NOT NULL,
-  website VARCHAR(200),
-  PRIMARY KEY(id)
-);
