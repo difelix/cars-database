@@ -1,4 +1,4 @@
-package com.difelix.cardatabase.models
+package com.difelix.cardatabase.models.entities
 
 import java.util.UUID
 import javax.persistence.Column
